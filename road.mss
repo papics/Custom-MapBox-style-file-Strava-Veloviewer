@@ -1,12 +1,11 @@
 // Roads & Railways //
 
-@case: #fff;
-
 @motorway: #CC5B23;
 @primary: #CF7F26;
 @secondary: #E9AF32;
 @tertiary: #EFD13B;
 @street: #fff;
+@case: #fff;
 
 #road,
 #tunnel,
@@ -74,7 +73,7 @@
     }
   }
   [class='main'][type='primary']['mapnik::geometry_type'=2],
-  [class='main'][type='trunk']['mapnik::geometry_type'=2]{
+  [class='main'][type='trunk']['mapnik::geometry_type'=2] {
     ::case[zoom>=6] {
       line-color: @case;
       [zoom<=9] { line-color: @primary }
@@ -173,7 +172,7 @@
   [class='street']['mapnik::geometry_type'=2],
   [class='street_limited']['mapnik::geometry_type'=2] {
     ::case[zoom>=12] {
-      line-color: @land * 0.8;
+      line-color: @land * 0.75;
       line-opacity: 0.5;
       #road { line-cap: round; }
       #tunnel { line-dasharray: 3,3; }
@@ -298,11 +297,11 @@
       line-color: #ffd;
       line-opacity: 0.5;
       line-join: round;
-      line-width: 6;
+      line-width: 5;
     }
     ::fill {
       line-color: #bba;
-      line-width: 4;
+      line-width: 2.5;
       line-dasharray: 2,1;
     }
   }
@@ -394,6 +393,33 @@
     line-width: 0.6;
     [zoom>=17] { line-width: 1; }
     [zoom>=18] { line-width: 1.2; }
+  }
+}
+
+// One-way Arrows //
+
+// These are drawn on the actual road layers to ensure correct ordering
+// of arrows on bridges & tunnels.
+#road::fill,
+#road,
+#bridge::fill,
+#bridge,
+#tunnel {
+  ['mapnik::geometry_type'=2][zoom>=16][oneway=1] {
+    [class='motorway_link'],
+    [class='main'],
+    [class='street'],
+    [class='street_limited'] {
+      marker-file: url(img/road/oneway.svg);
+      marker-allow-overlap: true;
+      marker-ignore-placement: true;
+      marker-placement:line;
+      marker-max-error: 0.5;
+      marker-spacing: 200;
+      [zoom=16] { marker-transform: "scale(0.75)"; }
+      [zoom=17] { marker-transform: "scale(1)"; }
+      [zoom>17] { marker-transform: "scale(1.25)"; }
+    }
   }
 }
 

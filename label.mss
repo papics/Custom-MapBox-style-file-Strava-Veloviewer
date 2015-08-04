@@ -640,7 +640,7 @@
 // HOUSE NUMBERS
 // =====================================================================
 
-#housenum_label[zoom>=18] {
+#housenum_label[zoom>=19] {
   text-name: [house_num];
   text-face-name: @sans_italic;
   text-fill: @land * 0.8;

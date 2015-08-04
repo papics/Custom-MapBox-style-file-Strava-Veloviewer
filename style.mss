@@ -4,6 +4,7 @@
 @water: #8dc8e8;
 @water_dark: #185869;  // for the inline/shadow
 @crop: #e6e6bb;
+@agriculture: #e6e6bb;
 @grass: #aadda1;
 @scrub: #94b26c;
 @wood: #629959;
@@ -61,8 +62,10 @@ Map {
     [class='scrub'] { polygon-fill: @scrub; polygon-opacity: 0.5}
     [class='grass'] { polygon-fill: @grass; polygon-opacity: 0.5}
     [class='crop'] { polygon-fill: @crop; polygon-opacity: 0.5}
+    [class='agriculture'] { polygon-fill: @crop; polygon-opacity: 1}
     [class='sand'] { polygon-fill: @sand; polygon-opacity: 0.5}
     [class='rock'] { polygon-fill: @rock; polygon-opacity: 0.5}
+    [class='glacier'] { polygon-fill: @snow; polygon-opacity: 1}
     [type='golf_course'],[type='rough'] { polygon-fill: lighten(@park,10%); polygon-opacity: 0.5}
   }
 }
@@ -87,8 +90,15 @@ Map {
     line-color: @builtup*0.95;
     line-offset: -0.5;
   }
-  [class='park'] {
+  [class='park'][type!='national_park'][type!='nature_reserve'] {
     polygon-fill: @park;
+    line-color: @park*0.95;
+    line-offset: -0.5;
+  }
+  [class='park'][type='national_park'],
+  [class='park'][type='nature_reserve'] {
+    polygon-fill: @park;
+    polygon-opacity: 0.5;
     line-color: @park*0.95;
     line-offset: -0.5;
   }
@@ -130,7 +140,6 @@ Map {
   polygon-fill: rgba(0,0,0,0);
   polygon-clip: false;
   [class='wetland'] {
-    polygon-fill: fadeout(@water,80);
     [zoom>=12] {
       polygon-pattern-file: url(img/pattern/wetland_16.png);
       polygon-pattern-opacity: 0.5;
@@ -140,7 +149,6 @@ Map {
     [zoom>=14] { polygon-pattern-file: url(img/pattern/wetland_64.png); }
   }
   [class='wetland_noveg'] {
-    polygon-fill: fadeout(@water,80);
     [zoom>=12] {
       polygon-pattern-file: url(img/pattern/wetland_noveg_16.png);
       polygon-pattern-opacity: 0.5;
