@@ -5,7 +5,7 @@
 // Airports and rail stations are styled separately from other POIs
 // because we use different fields to set their icon images.
 
-#poi_label[type!='Aerodrome'][type!='Rail Station'][type!='hole'][type!='Peak'] {
+#poi_label[type!='Aerodrome'][type!='Rail Station'][type!='hole'][type!='Peak'][type!='Volcano'] {
   ::icon {
     [zoom<14],
     [zoom>=14][scalerank=1][localrank<=1],
@@ -161,7 +161,8 @@
 
 // Mountain peaks _____________________________________________________
 
-#poi_label[type='Peak'] {
+#poi_label[type='Peak'],
+  [type='Volcano']{
   marker-file: url("img/maki/triangle-stroked-12.svg");
   marker-fill: #555;
   marker-line-width: 0;  
