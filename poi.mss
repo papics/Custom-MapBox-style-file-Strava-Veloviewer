@@ -5,10 +5,12 @@
 // Airports and rail stations are styled separately from other POIs
 // because we use different fields to set their icon images.
 
-#poi_label[type!='Aerodrome'][type!='Rail Station'][type!='hole'][type!='Peak'][type!='Volcano'] {
+#poi_label[type!='Aerodrome'][type!='Rail Station'][type!='hole'] {
   ::icon {
     [zoom<14],
-    [zoom>=14][scalerank=1][localrank<=1],
+    [zoom>=14][scalerank=1][localrank<=1][type!='Peak'][type!='Volcano'],
+    [zoom>=14][type='Peak'],
+    [zoom>=14][type='Volcano'],
     [zoom>=15][scalerank<=2][localrank<=1],
     [zoom>=16][scalerank<=3][localrank<=1],
     [zoom>=17][localrank<=4],
@@ -17,17 +19,23 @@
       [maki!=null] {
         marker-file: url("img/maki/[maki]-12.svg");
       }
-      [maki=null] {
+      [maki=null][type!='Peak'][type!='Volcano'] {
         // small dot for POIs with no Maki icon defined
         marker-width: 4;
         marker-fill: rgba(0,0,0,0);
         marker-line-width: 1.2;
         marker-line-color: #666;
       }
+      [maki=null][type='Peak'],
+      [maki=null][type='Volcano'] {
+        marker-file: url("img/maki/triangle-stroked-12.svg");
+      }
     }
   }
   [zoom<14],
-  [zoom>=14][scalerank=1][localrank<=1],
+  [zoom>=14][scalerank=1][localrank<=1][type!='Peak'][type!='Volcano'],
+  [zoom>=14][type='Peak'],
+  [zoom>=14][type='Volcano'],
   [zoom>=15][scalerank<=2][localrank<=1],
   [zoom>=16][scalerank<=3][localrank<=1],
   [zoom>=17][localrank<=4],
@@ -53,6 +61,10 @@
       [zoom>=17] { text-size: 12; text-wrap-width: 120; }
     }
     [scalerank>=3] {
+      [zoom>=17] { text-size: 11; text-wrap-width: 100; }
+      [zoom>=19] { text-size: 12; text-wrap-width: 120; }
+    }
+    [scalerank=4] {
       [zoom>=17] { text-size: 11; text-wrap-width: 100; }
       [zoom>=19] { text-size: 12; text-wrap-width: 120; }
     }
@@ -157,40 +169,6 @@
   text-halo-rasterizer: fast;
   [zoom>=17] { text-size: 12; }
   [zoom>=18] { text-size: 14; }
-}
-
-// Mountain peaks _____________________________________________________
-
-#poi_label[type='Peak'],
-  [type='Volcano']{
-  marker-file: url("img/maki/triangle-stroked-12.svg");
-  marker-fill: #555;
-  marker-line-width: 0;  
-  text-name: @name;
-  text-face-name: @sans;
-  text-size: 10;
-  text-character-spacing: 0.5;
-  text-wrap-width: 55;
-  text-fill: #555;
-  text-halo-fill: @land;
-  text-halo-radius: 1;
-  text-halo-rasterizer: fast;
-  text-line-spacing: -4;
-  text-dy: 10;
-  [zoom>=15] { 
-    text-size: 11; 
-    text-dy: 11; 
-    text-wrap-width: 60;}
-  [zoom>=17] { 
-    text-size: 12; 
-    text-dy: 12; 
-    text-wrap-width: 65;}
-  [zoom>=19] { 
-      text-size: 13; 
-      text-dy: 13; 
-      text-wrap-width: 70;
-      marker-file: url("img/maki/triangle-stroked-18.svg");
-  }
 }
 
 /**/
