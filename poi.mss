@@ -19,7 +19,7 @@
       [maki!=null] {
         marker-file: url("img/maki/[maki]-12.svg");
       }
-      [maki=null][type!='Peak'][type!='Volcano'] {
+      [maki=null][type!='Peak'][type!='Volcano'][type!='Island'] {
         // small dot for POIs with no Maki icon defined
         marker-width: 4;
         marker-fill: rgba(0,0,0,0);
@@ -48,6 +48,9 @@
     text-halo-radius: 1;
     text-halo-rasterizer: fast;
     text-dy: 12;
+    [type='Island'] {
+      text-dy: 0;
+    }
     text-line-spacing: -4;
     text-wrap-width: 80;
     text-wrap-before: true;

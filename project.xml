@@ -8908,6 +8908,34 @@
 <Style name="poi_label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([scalerank] = 1) and ([localrank] &lt;= 1) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="14" wrap-width="130" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([scalerank] = 1) and ([localrank] &lt;= 1) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([scalerank] = 1) and ([localrank] &lt;= 1) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="11" wrap-width="100" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([scalerank] = 1) and ([localrank] &lt;= 1) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([scalerank] = 1) and ([localrank] &lt;= 1) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 1) and ([localrank] &lt;= 1) and ([type] != 'Peak') and ([type] != 'Volcano')</Filter>
     <TextSymbolizer size="14" wrap-width="130" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -8936,6 +8964,28 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([scalerank] &gt;= 3) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([scalerank] &gt;= 3) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="11" wrap-width="100" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([scalerank] &gt;= 3) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([scalerank] &gt;= 3) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
     <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([scalerank] &gt;= 3) and ([type] = 'Volcano')</Filter>
     <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -9011,6 +9061,28 @@
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([scalerank] &gt;= 3)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([localrank] &lt;= 1) and ([scalerank] = 2) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 1) and ([scalerank] = 2) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="11" wrap-width="100" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 1) and ([scalerank] = 2) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 1) and ([scalerank] = 2) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -9170,103 +9242,169 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([scalerank] = 4) and ([type] = 'Volcano') and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([scalerank] = 4) and ([type] = 'Volcano') and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([scalerank] = 4) and ([type] = 'Volcano') and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([scalerank] = 4) and ([type] = 'Volcano') and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([scalerank] = 4) and ([type] = 'Volcano')</Filter>
+    <Filter>([type] = 'Peak') and ([scalerank] = 4) and ([localrank] &lt;= 4)</Filter>
     <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([scalerank] = 4) and ([type] = 'Volcano')</Filter>
+    <Filter>([type] = 'Peak') and ([scalerank] = 4) and ([localrank] &lt;= 4)</Filter>
     <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([scalerank] = 4) and ([type] = 'Volcano')</Filter>
+    <Filter>([type] = 'Peak') and ([scalerank] = 4) and ([localrank] &lt;= 4)</Filter>
     <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([scalerank] = 4) and ([type] = 'Volcano')</Filter>
+    <Filter>([type] = 'Peak') and ([scalerank] = 4) and ([localrank] &lt;= 4)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([scalerank] = 4) and ([type] = 'Volcano')</Filter>
+    <Filter>([type] = 'Peak') and ([scalerank] = 4) and ([localrank] &lt;= 4)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([scalerank] = 4) and ([type] = 'Peak') and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([scalerank] = 4) and ([type] = 'Peak') and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([scalerank] = 4) and ([type] = 'Peak') and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([scalerank] = 4) and ([type] = 'Peak') and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([scalerank] = 4) and ([type] = 'Peak')</Filter>
+    <Filter>([type] = 'Peak') and ([scalerank] = 4) and ([localrank] &lt;= 16)</Filter>
     <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([scalerank] = 4) and ([type] = 'Peak')</Filter>
+    <Filter>([type] = 'Peak') and ([scalerank] = 4) and ([localrank] &lt;= 16)</Filter>
     <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([scalerank] = 4) and ([type] = 'Peak')</Filter>
+    <Filter>([type] = 'Peak') and ([scalerank] = 4) and ([localrank] &lt;= 16)</Filter>
     <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([scalerank] = 4) and ([type] = 'Peak')</Filter>
+    <Filter>([type] = 'Peak') and ([scalerank] = 4) and ([localrank] &lt;= 16)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([scalerank] = 4) and ([type] = 'Peak')</Filter>
+    <Filter>([type] = 'Peak') and ([scalerank] = 4) and ([localrank] &lt;= 16)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([type] = 'Peak') and ([scalerank] = 4)</Filter>
+    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([type] = 'Peak') and ([scalerank] = 4)</Filter>
+    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'Peak') and ([scalerank] = 4)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Peak') and ([scalerank] = 4)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 4) and ([localrank] &lt;= 4)</Filter>
+    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 4) and ([localrank] &lt;= 4)</Filter>
+    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 4) and ([localrank] &lt;= 4)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 4) and ([localrank] &lt;= 4)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 4) and ([localrank] &lt;= 16)</Filter>
+    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 4) and ([localrank] &lt;= 16)</Filter>
+    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 4) and ([localrank] &lt;= 16)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 4) and ([localrank] &lt;= 16)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 4)</Filter>
+    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 4)</Filter>
+    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 4)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 4)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([scalerank] = 4) and ([localrank] &lt;= 4) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([scalerank] = 4) and ([localrank] &lt;= 4) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="11" wrap-width="100" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([scalerank] = 4) and ([localrank] &lt;= 4) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="11" wrap-width="100" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([scalerank] = 4) and ([localrank] &lt;= 4) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
@@ -9289,6 +9427,22 @@
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 4) and ([localrank] &lt;= 4)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 4) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 4) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="11" wrap-width="100" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 4) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
@@ -9308,56 +9462,18 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 4)</Filter>
-    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 4)</Filter>
-    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 4)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 4)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 4)</Filter>
-    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 4)</Filter>
-    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 4)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 4)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
     <Filter>([type] = 'Peak') and ([scalerank] &gt;= 3) and ([localrank] &lt;= 4)</Filter>
     <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([type] = 'Peak') and ([scalerank] &gt;= 3) and ([localrank] &lt;= 4)</Filter>
+    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Peak') and ([scalerank] &gt;= 3) and ([localrank] &lt;= 4)</Filter>
     <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -9450,65 +9566,103 @@
     <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
     <Filter>([type] = 'Volcano') and ([scalerank] &gt;= 3) and ([localrank] &lt;= 16)</Filter>
+    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] &gt;= 3) and ([localrank] &lt;= 16)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] &gt;= 3) and ([localrank] &lt;= 16)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] &gt;= 3)</Filter>
+    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] &gt;= 3)</Filter>
+    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] &gt;= 3)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] &gt;= 3)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([localrank] &lt;= 4) and ([scalerank] &gt;= 3) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 4) and ([scalerank] &gt;= 3) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="11" wrap-width="100" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 4) and ([scalerank] &gt;= 3) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="11" wrap-width="100" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 4) and ([scalerank] &gt;= 3) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4) and ([scalerank] &gt;= 3)</Filter>
+    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4) and ([scalerank] &gt;= 3)</Filter>
     <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] &gt;= 3) and ([localrank] &lt;= 16)</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4) and ([scalerank] &gt;= 3)</Filter>
     <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] &gt;= 3) and ([localrank] &lt;= 16)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] &gt;= 3) and ([localrank] &lt;= 16)</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4) and ([scalerank] &gt;= 3)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] &gt;= 3)</Filter>
-    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] &gt;= 3) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] &gt;= 3)</Filter>
-    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] &gt;= 3)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] &gt;= 3) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="11" wrap-width="100" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] &gt;= 3)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &gt;= 3) and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &gt;= 3) and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &gt;= 3) and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] &gt;= 3) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
@@ -9527,158 +9681,158 @@
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 2) and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 2) and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 2) and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 2) and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 2) and ([localrank] &lt;= 16)</Filter>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 2) and ([type] = 'Peak')</Filter>
     <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 2) and ([localrank] &lt;= 16)</Filter>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 2) and ([type] = 'Peak')</Filter>
     <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 2) and ([localrank] &lt;= 16)</Filter>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 2) and ([type] = 'Peak')</Filter>
     <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 2) and ([localrank] &lt;= 16)</Filter>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 2) and ([type] = 'Peak')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 2) and ([localrank] &lt;= 16)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 2)</Filter>
-    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 2)</Filter>
-    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 2)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([scalerank] = 2)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 2) and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 2) and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 2) and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 2) and ([localrank] &lt;= 4)</Filter>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 2) and ([type] = 'Peak')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 2) and ([localrank] &lt;= 16)</Filter>
+    <Filter>([scalerank] = 2) and ([localrank] &lt;= 4) and ([type] = 'Volcano')</Filter>
     <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 2) and ([localrank] &lt;= 16)</Filter>
+    <Filter>([scalerank] = 2) and ([localrank] &lt;= 4) and ([type] = 'Volcano')</Filter>
     <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 2) and ([localrank] &lt;= 16)</Filter>
+    <Filter>([scalerank] = 2) and ([localrank] &lt;= 4) and ([type] = 'Volcano')</Filter>
     <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 2) and ([localrank] &lt;= 16)</Filter>
+    <Filter>([scalerank] = 2) and ([localrank] &lt;= 4) and ([type] = 'Volcano')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 2) and ([localrank] &lt;= 16)</Filter>
+    <Filter>([scalerank] = 2) and ([localrank] &lt;= 4) and ([type] = 'Volcano')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([scalerank] = 2) and ([localrank] &lt;= 4) and ([type] = 'Peak')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 2)</Filter>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([scalerank] = 2) and ([localrank] &lt;= 4) and ([type] = 'Peak')</Filter>
     <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 2)</Filter>
+    <Filter>([scalerank] = 2) and ([localrank] &lt;= 4) and ([type] = 'Peak')</Filter>
     <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 2)</Filter>
+    <Filter>([scalerank] = 2) and ([localrank] &lt;= 4) and ([type] = 'Peak')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 2)</Filter>
+    <Filter>([scalerank] = 2) and ([localrank] &lt;= 4) and ([type] = 'Peak')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([scalerank] = 2) and ([localrank] &lt;= 4) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4) and ([scalerank] = 2)</Filter>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([scalerank] = 2) and ([localrank] &lt;= 4) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([scalerank] = 2) and ([localrank] &lt;= 4) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 2) and ([localrank] &lt;= 4)</Filter>
+    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 2) and ([localrank] &lt;= 4)</Filter>
     <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4) and ([scalerank] = 2)</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 2) and ([localrank] &lt;= 4)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 2) and ([type] = 'Volcano')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 2) and ([type] = 'Volcano')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 2) and ([type] = 'Volcano')</Filter>
+    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 2) and ([type] = 'Volcano')</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 2) and ([type] = 'Volcano')</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 2) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 2) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -9692,6 +9846,56 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'Peak') and ([scalerank] = 2)</Filter>
+    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'Peak') and ([scalerank] = 2)</Filter>
+    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'Peak') and ([scalerank] = 2)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Peak') and ([scalerank] = 2)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 2)</Filter>
+    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 2)</Filter>
+    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 2)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 2)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'Peak') and ([scalerank] = 1) and ([localrank] &lt;= 4)</Filter>
+    <TextSymbolizer size="14" wrap-width="130" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'Peak') and ([scalerank] = 1) and ([localrank] &lt;= 4)</Filter>
     <TextSymbolizer size="14" wrap-width="130" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -9809,69 +10013,85 @@
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'Volcano') and ([scalerank] = 1) and ([localrank] &lt;= 16)</Filter>
+    <TextSymbolizer size="14" wrap-width="130" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 1) and ([localrank] &lt;= 16)</Filter>
+    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 1) and ([localrank] &lt;= 16)</Filter>
+    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 1) and ([localrank] &lt;= 16)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 1) and ([localrank] &lt;= 16)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 1)</Filter>
+    <TextSymbolizer size="14" wrap-width="130" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 1)</Filter>
+    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 1)</Filter>
+    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 1)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([scalerank] = 1)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([localrank] &lt;= 4) and ([scalerank] = 1) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="14" wrap-width="130" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 4) and ([scalerank] = 1) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="14" wrap-width="130" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 4) and ([scalerank] = 1) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4) and ([scalerank] = 1)</Filter>
     <TextSymbolizer size="14" wrap-width="130" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 1) and ([localrank] &lt;= 16)</Filter>
-    <TextSymbolizer size="14" wrap-width="130" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 1) and ([localrank] &lt;= 16)</Filter>
-    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 1) and ([localrank] &lt;= 16)</Filter>
-    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 1) and ([localrank] &lt;= 16)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 1) and ([localrank] &lt;= 16)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 1)</Filter>
-    <TextSymbolizer size="14" wrap-width="130" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 1)</Filter>
-    <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 1)</Filter>
-    <TextSymbolizer size="11" wrap-width="100" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 1)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([scalerank] = 1)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4) and ([scalerank] = 1)</Filter>
     <TextSymbolizer size="14" wrap-width="130" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -9882,6 +10102,16 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 1) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="14" wrap-width="130" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([scalerank] = 1) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 16) and ([scalerank] = 1)</Filter>
     <TextSymbolizer size="14" wrap-width="130" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -9889,6 +10119,45 @@
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 16) and ([scalerank] = 1)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([localrank] &lt;= 1) and ([type] = 'Island') and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 1) and ([type] = 'Island') and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 1) and ([type] = 'Island') and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 3)</Filter>
+    <MarkersSymbolizer file="img/rail/[network]-12.svg" height="24" allow-overlap="false" />
+    <TextSymbolizer size="12" halo-radius="2" dx="15" dy="15" fontset-name="fontset-3" fill="#888888" halo-fill="#ffffff" halo-rasterizer="fast" wrap-width="80" placement-type="simple" placements="S,N,E,W" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 3)</Filter>
+    <MarkersSymbolizer file="img/rail/[network]-18.svg" height="18" allow-overlap="false" />
+    <TextSymbolizer fontset-name="fontset-3" fill="#888888" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" size="11" wrap-width="80" placement-type="simple" dx="11" dy="11" placements="S,N,E,W" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -9911,19 +10180,6 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 3)</Filter>
-    <MarkersSymbolizer file="img/rail/[network]-12.svg" height="24" allow-overlap="false" />
-    <TextSymbolizer size="12" halo-radius="2" dx="15" dy="15" fontset-name="fontset-3" fill="#888888" halo-fill="#ffffff" halo-rasterizer="fast" wrap-width="80" placement-type="simple" placements="S,N,E,W" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 3)</Filter>
-    <MarkersSymbolizer file="img/rail/[network]-18.svg" height="18" allow-overlap="false" />
-    <TextSymbolizer fontset-name="fontset-3" fill="#888888" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" size="11" wrap-width="80" placement-type="simple" dx="11" dy="11" placements="S,N,E,W" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'Rail Station') and ([network] != null) and ([scalerank] = 2)</Filter>
     <MarkersSymbolizer file="img/rail/[network]-12.svg" height="24" allow-overlap="false" />
     <TextSymbolizer size="12" halo-radius="2" dx="15" dy="15" fontset-name="fontset-3" fill="#888888" halo-fill="#ffffff" halo-rasterizer="fast" wrap-width="80" placement-type="simple" placements="S,N,E,W" ><![CDATA[[name]]]></TextSymbolizer>
@@ -9943,6 +10199,16 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([scalerank] = 4) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([scalerank] = 4) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
     <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 4)</Filter>
     <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -9950,6 +10216,16 @@
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 4)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([scalerank] &gt;= 3) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([scalerank] &gt;= 3) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
@@ -9963,6 +10239,16 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([scalerank] = 2) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="12" wrap-width="120" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([scalerank] = 2) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
     <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 2)</Filter>
     <TextSymbolizer size="12" wrap-width="120" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -9970,6 +10256,16 @@
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 2)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([scalerank] = 1) and ([type] = 'Island')</Filter>
+    <TextSymbolizer size="14" wrap-width="130" dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([scalerank] = 1) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
@@ -9982,63 +10278,71 @@
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([localrank] &lt;= 1) and ([scalerank] &lt;= 2) and ([type] = 'Volcano')</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'Island') and ([localrank] &lt;= 4)</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'Island') and ([localrank] &lt;= 4)</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Island') and ([localrank] &lt;= 4)</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 1) and ([scalerank] &lt;= 2) and ([type] = 'Volcano')</Filter>
+    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([type] = 'Volcano')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 1) and ([scalerank] &lt;= 2) and ([type] = 'Volcano')</Filter>
+    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([type] = 'Volcano')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 1) and ([scalerank] &lt;= 2) and ([type] = 'Volcano')</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([localrank] &lt;= 1) and ([scalerank] &lt;= 2) and ([type] = 'Peak')</Filter>
+    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([type] = 'Volcano')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 1) and ([scalerank] &lt;= 2) and ([type] = 'Peak')</Filter>
+    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([type] = 'Peak')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 1) and ([scalerank] &lt;= 2) and ([type] = 'Peak')</Filter>
+    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([type] = 'Peak')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 1) and ([scalerank] &lt;= 2) and ([type] = 'Peak')</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 1) and ([scalerank] &lt;= 2)</Filter>
+    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([type] = 'Peak')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 1) and ([scalerank] &lt;= 2)</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 2) and ([localrank] &lt;= 1)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 1) and ([scalerank] &lt;= 2)</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 2) and ([localrank] &lt;= 1)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -10138,61 +10442,81 @@
     <TextSymbolizer size="10" fill="#888888" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" fontset-name="fontset-3" line-spacing="-2" dy="8" ><![CDATA['']]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([localrank] &lt;= 4) and ([type] = 'Volcano')</Filter>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Island')</Filter>
+    <TextSymbolizer dy="0" fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([localrank] &lt;= 4)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([localrank] &lt;= 4)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 4) and ([type] = 'Volcano')</Filter>
+    <Filter>([type] = 'Volcano') and ([localrank] &lt;= 16)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 4) and ([type] = 'Volcano')</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([localrank] &lt;= 4) and ([type] = 'Peak')</Filter>
+    <Filter>([type] = 'Volcano') and ([localrank] &lt;= 16)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 4) and ([type] = 'Peak')</Filter>
+    <Filter>([type] = 'Volcano')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 4) and ([type] = 'Peak')</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4)</Filter>
+    <Filter>([type] = 'Volcano')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([type] = 'Volcano')</Filter>
+    <Filter>([localrank] &lt;= 4) and ([type] = 'Peak')</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 4) and ([type] = 'Peak')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([type] = 'Volcano')</Filter>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 4) and ([type] = 'Peak')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([type] = 'Volcano')</Filter>
+    <Filter>([localrank] &lt;= 4) and ([type] = 'Peak')</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4)</Filter>
+    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4)</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -10219,16 +10543,6 @@
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 16)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'Volcano')</Filter>
-    <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano')</Filter>
     <TextSymbolizer fontset-name="fontset-3" fill="#555555" halo-fill="#f4efe1" halo-radius="1" halo-rasterizer="fast" dy="12" line-spacing="-4" wrap-width="80" wrap-before="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -10299,215 +10613,219 @@
 <Style name="poi_label-icon" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 1) and ([localrank] &lt;= 1) and ([type] != 'Peak') and ([type] != 'Volcano') and ([maki] = null)</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 1) and ([localrank] &lt;= 1) and ([type] != 'Peak') and ([type] != 'Volcano') and ([maki] = null) and ([type] != 'Island')</Filter>
     <MarkersSymbolizer width="4" fill="rgba(0, 0, 0, 0)" stroke-width="1.2" stroke="#666666" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 1) and ([localrank] &lt;= 1) and ([type] != 'Peak') and ([type] != 'Volcano') and ([maki] = null)</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 1) and ([localrank] &lt;= 1) and ([type] != 'Peak') and ([type] != 'Volcano') and ([maki] = null) and ([type] != 'Island')</Filter>
     <MarkersSymbolizer width="4" fill="rgba(0, 0, 0, 0)" stroke-width="1.2" stroke="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano')</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano') and ([type] != 'Island')</Filter>
     <MarkersSymbolizer width="4" fill="rgba(0, 0, 0, 0)" stroke-width="1.2" stroke="#666666" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano')</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano') and ([type] != 'Island')</Filter>
     <MarkersSymbolizer width="4" fill="rgba(0, 0, 0, 0)" stroke-width="1.2" stroke="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano')</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano') and ([type] != 'Island')</Filter>
     <MarkersSymbolizer width="4" fill="rgba(0, 0, 0, 0)" stroke-width="1.2" stroke="#666666" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano')</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano') and ([type] != 'Island')</Filter>
     <MarkersSymbolizer width="4" fill="rgba(0, 0, 0, 0)" stroke-width="1.2" stroke="#666666" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 1) and ([localrank] &lt;= 1) and ([type] != 'Peak') and ([type] != 'Volcano') and ([maki] != null)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 1) and ([localrank] &lt;= 1) and ([type] != 'Peak') and ([type] != 'Volcano') and ([maki] != null)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Volcano')</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Volcano')</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Volcano')</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Volcano')</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Volcano')</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Volcano')</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Peak') and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Peak') and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Peak') and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Peak') and ([scalerank] &lt;= 2)</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Peak')</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Peak')</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Peak')</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano')</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano') and ([type] != 'Island')</Filter>
     <MarkersSymbolizer width="4" fill="rgba(0, 0, 0, 0)" stroke-width="1.2" stroke="#666666" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano')</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano') and ([type] != 'Island')</Filter>
     <MarkersSymbolizer width="4" fill="rgba(0, 0, 0, 0)" stroke-width="1.2" stroke="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 16) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano')</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 16) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano') and ([type] != 'Island')</Filter>
     <MarkersSymbolizer width="4" fill="rgba(0, 0, 0, 0)" stroke-width="1.2" stroke="#666666" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 16) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano')</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 16) and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano') and ([type] != 'Island')</Filter>
     <MarkersSymbolizer width="4" fill="rgba(0, 0, 0, 0)" stroke-width="1.2" stroke="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([maki] = null) and ([localrank] &lt;= 4)</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 1) and ([localrank] &lt;= 1) and ([type] != 'Peak') and ([type] != 'Volcano') and ([maki] != null)</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([maki] = null) and ([localrank] &lt;= 4)</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] = 1) and ([localrank] &lt;= 1) and ([type] != 'Peak') and ([type] != 'Volcano') and ([maki] != null)</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Peak')</Filter>
     <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([maki] = null) and ([localrank] &lt;= 16)</Filter>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Peak')</Filter>
     <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([maki] = null) and ([localrank] &lt;= 16)</Filter>
+    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Peak')</Filter>
+    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Volcano') and ([scalerank] &lt;= 2)</Filter>
+    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Volcano') and ([scalerank] &lt;= 2)</Filter>
     <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([maki] = null)</Filter>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Volcano') and ([scalerank] &lt;= 2)</Filter>
     <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([maki] = null)</Filter>
+    <Filter>([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Volcano') and ([scalerank] &lt;= 2)</Filter>
     <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([maki] = null) and ([type] = 'Peak') and ([localrank] &lt;= 4)</Filter>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Volcano')</Filter>
     <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([maki] = null) and ([type] = 'Peak') and ([localrank] &lt;= 4)</Filter>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Volcano')</Filter>
     <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([maki] = null) and ([type] = 'Peak') and ([localrank] &lt;= 4)</Filter>
+    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Volcano')</Filter>
     <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([maki] = null) and ([type] = 'Peak')</Filter>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Peak')</Filter>
     <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([maki] = null) and ([type] = 'Peak')</Filter>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Peak')</Filter>
     <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 16) and ([maki] = null) and ([type] = 'Peak')</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'Peak') and ([maki] = null)</Filter>
+    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] = null) and ([type] = 'Peak')</Filter>
     <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([maki] = null)</Filter>
-    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano') and ([type] != 'Island')</Filter>
+    <MarkersSymbolizer width="4" fill="rgba(0, 0, 0, 0)" stroke-width="1.2" stroke="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano')</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano') and ([type] != 'Island')</Filter>
     <MarkersSymbolizer width="4" fill="rgba(0, 0, 0, 0)" stroke-width="1.2" stroke="#666666" />
   </Rule>
   <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'Peak') and ([maki] = null) and ([localrank] &lt;= 4)</Filter>
+    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+  </Rule>
+  <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([maki] = null) and ([type] != 'Peak') and ([type] != 'Volcano')</Filter>
-    <MarkersSymbolizer width="4" fill="rgba(0, 0, 0, 0)" stroke-width="1.2" stroke="#666666" />
+    <Filter>([type] = 'Peak') and ([maki] = null) and ([localrank] &lt;= 4)</Filter>
+    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'Peak') and ([maki] = null) and ([localrank] &lt;= 16)</Filter>
+    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Peak') and ([maki] = null) and ([localrank] &lt;= 16)</Filter>
+    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'Peak') and ([maki] = null)</Filter>
+    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Peak') and ([maki] = null)</Filter>
+    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([maki] = null) and ([localrank] &lt;= 4)</Filter>
+    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([maki] = null) and ([localrank] &lt;= 4)</Filter>
+    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([maki] = null) and ([localrank] &lt;= 16)</Filter>
+    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([maki] = null) and ([localrank] &lt;= 16)</Filter>
+    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([maki] = null)</Filter>
+    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([maki] = null)</Filter>
+    <MarkersSymbolizer file="img/maki/triangle-stroked-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] != null) and ([type] = 'Peak')</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] != null) and ([type] = 'Peak')</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] != null) and ([type] = 'Peak')</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
@@ -10527,28 +10845,28 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] != null) and ([type] = 'Peak')</Filter>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] != null)</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] != null)</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] != null) and ([type] = 'Peak')</Filter>
     <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] != null) and ([type] = 'Peak')</Filter>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] != null) and ([type] = 'Peak')</Filter>
     <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] != null) and ([type] = 'Peak')</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] != null)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 2) and ([localrank] &lt;= 1) and ([maki] != null)</Filter>
+    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] != null) and ([type] = 'Peak')</Filter>
     <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
   </Rule>
   <Rule>
@@ -10569,104 +10887,86 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] != null) and ([type] = 'Peak')</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] != null) and ([type] = 'Peak')</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] != null) and ([type] = 'Peak')</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] != null)</Filter>
     <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([scalerank] &lt;= 3) and ([localrank] &lt;= 1) and ([maki] != null)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([maki] != null) and ([localrank] &lt;= 4)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([maki] != null) and ([localrank] &lt;= 4)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([maki] != null) and ([localrank] &lt;= 16)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([maki] != null) and ([localrank] &lt;= 16)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([maki] != null)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Volcano') and ([maki] != null)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'Peak') and ([maki] != null) and ([localrank] &lt;= 4)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([maki] != null) and ([localrank] &lt;= 4)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'Peak') and ([maki] != null) and ([localrank] &lt;= 16)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([maki] != null) and ([localrank] &lt;= 16)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'Peak') and ([maki] != null)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'Peak') and ([maki] != null)</Filter>
-    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([maki] != null) and ([localrank] &lt;= 4)</Filter>
     <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([maki] != null) and ([localrank] &lt;= 4)</Filter>
+    <Filter>([localrank] &lt;= 4) and ([maki] != null) and ([type] = 'Peak')</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 4) and ([maki] != null) and ([type] = 'Peak')</Filter>
     <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([maki] != null) and ([localrank] &lt;= 4)</Filter>
+    <Filter>([localrank] &lt;= 4) and ([maki] != null) and ([type] = 'Peak')</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([localrank] &lt;= 4) and ([maki] != null) and ([type] = 'Volcano')</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 4) and ([maki] != null) and ([type] = 'Volcano')</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 4) and ([maki] != null) and ([type] = 'Volcano')</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4) and ([maki] != null)</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([localrank] &lt;= 4) and ([maki] != null)</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([maki] != null) and ([type] = 'Peak')</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([maki] != null) and ([type] = 'Peak')</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([maki] != null) and ([type] = 'Peak')</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([maki] != null) and ([type] = 'Volcano')</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([maki] != null) and ([type] = 'Volcano')</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([localrank] &lt;= 16) and ([maki] != null) and ([type] = 'Volcano')</Filter>
     <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
   </Rule>
   <Rule>
@@ -10680,12 +10980,32 @@
     <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
   </Rule>
   <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'Peak') and ([maki] != null)</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Peak') and ([maki] != null)</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([maki] != null)</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'Volcano') and ([maki] != null)</Filter>
+    <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
     <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([maki] != null)</Filter>
     <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] != 'Aerodrome') and ([type] != 'Rail Station') and ([type] != 'hole') and ([maki] != null)</Filter>
     <MarkersSymbolizer file="img/maki/[maki]-12.svg" />
   </Rule>
