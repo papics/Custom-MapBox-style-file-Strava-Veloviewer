@@ -225,7 +225,7 @@
   text-placement: point;
   text-fill: @state_text;
   text-halo-fill: fadeout(@land,80);
-  text-halo-radius: 2;
+  text-halo-radius: 1;
   text-halo-rasterizer: fast;
   text-min-distance: 1;
   text-size: 10;
@@ -241,7 +241,7 @@
     text-wrap-width: 60;
   }
   [zoom>=9][zoom<=10] {
-    text-halo-radius: 2;
+    text-halo-radius: 1;
     text-size: 16;
     text-character-spacing: 2;
     [area>50000] { text-size: 18; text-character-spacing: 2; }
@@ -264,7 +264,7 @@
     shield-placement: point;
     shield-fill: @city_text;
     shield-halo-fill: @city_halo;
-    shield-halo-radius: 2;
+    shield-halo-radius: 1;
     shield-halo-rasterizer: fast;
     shield-min-distance: 2;
     shield-size: 11;
@@ -300,12 +300,12 @@
   text-placement: point;
   text-fill: @city_text;
   text-halo-fill: @city_halo;
-  text-halo-radius: 2;
+  text-halo-radius: 1;
   text-halo-rasterizer: fast;
   text-wrap-width: 40;
   text-min-distance: 5;
   text-line-spacing: -4;
-  [zoom>=12] { text-halo-radius: 3; }
+  [zoom>=12] { text-halo-radius: 1.5; }
   // We keep the scalerank filters the same for each zoom level.
   // This is slightly inefficient-looking CartoCSS, but it saves
   // some space in the project.xml
@@ -385,7 +385,7 @@
   text-placement: point;
   text-fill: @town_text;
   text-halo-fill: @town_halo;
-  text-halo-radius: 2;
+  text-halo-radius: 1;
   text-halo-rasterizer: fast;
   text-wrap-width: 60;
   text-wrap-before: true;
@@ -396,7 +396,7 @@
   [zoom>=11] { text-size: 14; text-min-distance: 18; }
   [zoom>=12] { text-size: 15; text-wrap-width: 80; }
   [zoom>=13] { text-size: 16; text-wrap-width: 120; }
-  [zoom>=14] { text-size: 18; text-wrap-width: 160; text-halo-radius: 3; }
+  [zoom>=14] { text-size: 18; text-wrap-width: 160; }
   [zoom>=15] { text-size: 20; text-wrap-width: 200; }
   [zoom>=16] { text-size: 22; text-wrap-width: 240; }
 }
@@ -410,7 +410,7 @@
   text-fill: @town_text;
   text-size: 11;
   text-halo-fill: @town_halo;
-  text-halo-radius: 2;
+  text-halo-radius: 1;
   text-halo-rasterizer: fast;
   text-wrap-width: 60;
   text-wrap-before: true;
@@ -433,7 +433,7 @@
   text-fill: @other_text;
   text-size: 11;
   text-halo-fill: @other_halo;
-  text-halo-radius: 1.5;
+  text-halo-radius: 1;
   text-halo-rasterizer: fast;
   text-wrap-width: 60;
   text-wrap-before: true;
@@ -458,7 +458,7 @@
     text-fill: @other_text;
     text-size: 11;
     text-halo-fill: @other_halo;
-    text-halo-radius: 1.5;
+    text-halo-radius: 1;
     text-halo-rasterizer: fast;
     text-wrap-width: 60;
     text-wrap-before: true;
@@ -482,7 +482,7 @@
   [zoom=17][area>10000],
   [zoom>=18][area>0]{
     text-name: @name;
-    text-halo-radius: 2;
+    text-halo-radius: 1;
     text-halo-rasterizer: fast;
     text-size: 11;
     text-wrap-width: 50;
@@ -528,7 +528,7 @@
   text-face-name: @sans_italic;
   text-fill: @water_dark;
   text-halo-fill: fadeout(#fff,80%);
-  text-halo-radius: 1.5;
+  text-halo-radius: 1;
   text-halo-rasterizer: fast;
   text-placement: line;
   text-min-distance: 400;
@@ -595,7 +595,7 @@
     text-fill: @road_text;
     text-size: 11;
     text-halo-fill: fadeout(@land,85);
-    text-halo-radius: 2;
+    text-halo-radius: 1;
     text-halo-rasterizer: fast;
     text-min-distance: 200; // only for labels w/ the same name
     [zoom>=14] { text-size: 12; }
@@ -624,7 +624,7 @@
   text-fill: #666;
   text-size: 10;
   text-halo-fill: fadeout(@land,60);
-  text-halo-radius: 2;
+  text-halo-radius: 1;
   text-halo-rasterizer: fast;
   text-min-distance: 200; // only for labels with the same name
   [zoom>=16] { text-size: 12; }

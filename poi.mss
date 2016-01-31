@@ -95,7 +95,7 @@
     text-face-name: @sans;
     text-fill: #888;
     text-halo-fill: #fff;
-    text-halo-radius: 1.5;
+    text-halo-radius: 1;
     text-halo-rasterizer: fast;
     text-size: 11;
     text-wrap-width: 80;
@@ -104,7 +104,7 @@
     text-placements: "S,N,E,W";
     [zoom>=17] {
       text-size: 12;
-      text-halo-radius: 2;
+      text-halo-radius: 1;
       text-dx: 15; text-dy: 15;
     }
   }
@@ -168,7 +168,7 @@
   text-fill: darken(#cdb,50);
   text-size: 10;
   text-halo-fill: @road_halo;
-  text-halo-radius: 1.5;
+  text-halo-radius: 1;
   text-halo-rasterizer: fast;
   [zoom>=17] { text-size: 12; }
   [zoom>=18] { text-size: 14; }
